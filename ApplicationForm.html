@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Job Application</title>
+</head>
+
+<body>
+    <h2>Typical Software Developer Job Application</h2>
+    <form action="http://gclass.alexburner.com/formtest.php" method="post">
+
+        <fieldset>
+            <legend>Email Contact Information</legend>
+            <div class="field">
+                <label>Email:</label>
+                <input type="text" name="email">
+            </div>
+            <div class="field">
+                <label>Password:</label>
+                <input type="password" name="password">
+            </div>
+            <div class="field">
+                <label>Repeat Password:</label>
+                <input type="password" name="password_r">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Personal Information</legend>
+            <div class="field">
+                <label>First Name:</label>
+                <input type="text" name="firstname"><br>
+                <label>Last Name:</label>
+                <input type="text" name="lastname"><br>
+                <label>University attended:</label>
+                <input type="text" name="university">
+            </div>
+            <div class="field">
+                <label>Year of Graduation:</label>
+                <select name="year">
+                    <option value="NA" selected="true">Choose a year (only if relevant)</option>
+                    <option value="19">2019</option>
+                    <option value="20">2020</option>
+                    <option value="21">2021</option>
+                    <option value="22">2022</option>
+                </select>
+            </div>
+            <div class="field">
+                <label>Gender:</label><br>
+                <input type="radio" name="gender" value="female"> Female<br>
+                <input type="radio" name="gender" value="male"> Male<br>
+                <input type="radio" name="gender" value="other"> Other
+            </div>
+
+            <div class="field">
+                <label>Current State:</label>
+                <select name="state">
+                    <option value="" selected="true">Choose a State</option>
+                    <option value="AL">Alabama</option>
+                    <option value="AK">Alaska</option>
+                    <option value="AZ">Arizona</option>
+                    <option value="AR">Arkansas</option>
+                    <option value="CA">California</option>
+                    <option value="CO">Colorado</option>
+                    <option value="CT">Connecticut</option>
+                    <option value="DE">Delaware</option>
+                    <option value="DC">District of Columbia</option>
+                    <option value="FL">Florida</option>
+                    <option value="GA">Georgia</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="ID">Idaho</option>
+                    <option value="IL">Illinois</option>
+                    <option value="IN">Indiana</option>
+                    <option value="IA">Iowa</option>
+                    <option value="KS">Kansas</option>
+                    <option value="KY">Kentucky</option>
+                    <option value="LA">Louisiana</option>
+                    <option value="ME">Maine</option>
+                    <option value="MD">Maryland</option>
+                    <option value="MA">Massachusetts</option>
+                    <option value="MI">Michigan</option>
+                    <option value="MN">Minnesota</option>
+                    <option value="MS">Mississippi</option>
+                    <option value="MO">Missouri</option>
+                    <option value="MT">Montana</option>
+                    <option value="NE">Nebraska</option>
+                    <option value="NV">Nevada</option>
+                    <option value="NH">New Hampshire</option>
+                    <option value="NJ">New Jersey</option>
+                    <option value="NM">New Mexico</option>
+                    <option value="NY">New York</option>
+                    <option value="NC">North Carolina</option>
+                    <option value="ND">North Dakota</option>
+                    <option value="OH">Ohio</option>
+                    <option value="OK">Oklahoma</option>
+                    <option value="OR">Oregon</option>
+                    <option value="PA">Pennsylvania</option>
+                    <option value="RI">Rhode Island</option>
+                    <option value="SC">South Carolina</option>
+                    <option value="SD">South Dakota</option>
+                    <option value="TN">Tennessee</option>
+                    <option value="TX">Texas</option>
+                    <option value="UT">Utah</option>
+                    <option value="VT">Vermont</option>
+                    <option value="VA">Virginia</option>
+                    <option value="WA">Washington</option>
+                    <option value="WV">West Virginia</option>
+                    <option value="WI">Wisconsin</option>
+                    <option value="WY">Wyoming</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Technical Information</legend>
+            <div class="field">
+                <label>Are you a Masters student?</label>
+                <input type="radio" name="masters" value="yes">Yes
+                <input type="radio" name="masters" value="no">No
+            </div>
+            <div class="field">
+                <label>What positions are you seeking? (check all that apply)</label>
+                <ul>
+                    <li><input type="checkbox" name="position" value="techlead">Tech Lead</li>
+                    <li><input type="checkbox" name="position" value="intern">Intern</li>
+                    <li><input type="checkbox" name="position" value="l3">L3 SDE</li>
+                    <li><input type="checkbox" name="position" value="l4">L4 SDE</li>
+                    <li><input type="checkbox" name="position" value="l5">L5 SDE</li>
+                    <li><input type="checkbox" name="position" value="l6">L6 SDE</li>
+                </ul>
+            </div>
+            <div class="field">
+                <label>Years of experience:</label>
+                <table>
+                    <tr>
+                        <td></td>
+                        <th>Front-end</th>
+                        <th>Back-end</th>
+                        <th>Web development</th>
+                        <th>Mobile app development</th>
+                        <th>Other</th>
+                    </tr>
+                    <tr>
+                        <th>Years</th>
+                        <td><input type="years" size="5" name="frontend"></td>
+                        <td><input type="years" size="5" name="backend"></td>
+                        <td><input type="years" size="5" name="webdev"></td>
+                        <td><input type="years" size="5" name="mobdev"></td>
+                        <td><input type="years" size="5" name="other"></td>
+
+                    </tr>
+                </table><br>
+            </div>
+            <div class="field">
+                <label>Hours available (used for team assignment and remote work/on call assignment):</label>
+                <table>
+                    <tr>
+                        <td></td>
+                        <th>Sun</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                    </tr>
+                    <tr>
+                        <th>From</th>
+                        <td><input type="time" size="5" name="su_from"></td>
+                        <td><input type="time" size="5" name="mo_from"></td>
+                        <td><input type="time" size="5" name="tu_from"></td>
+                        <td><input type="time" size="5" name="we_from"></td>
+                        <td><input type="time" size="5" name="th_from"></td>
+                        <td><input type="time" size="5" name="fr_from"></td>
+                        <td><input type="time" size="5" name="sa_from"></td>
+                    </tr>
+                    <tr>
+                        <th>Until</th>
+                        <td><input type="time" size="5" name="su_until"></td>
+                        <td><input type="time" size="5" name="mo_until"></td>
+                        <td><input type="time" size="5" name="tu_until"></td>
+                        <td><input type="time" size="5" name="we_until"></td>
+                        <td><input type="time" size="5" name="th_until"></td>
+                        <td><input type="time" size="5" name="fr_until"></td>
+                        <td><input type="time" size="5" name="sa_until"></td>
+                    </tr>
+                </table>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Experience Information</legend>
+            <div class="field">
+                <label>1. Why do you choose to work at our company? (300 words maximum)</label><br>
+                <textarea name="choose" rows="6" cols="60"></textarea>
+            </div>
+            <div class="field">
+                <label>2. What distinguishs you from other applicants? (300 words maximum)</label><br>
+                <textarea name="distinguish" rows="6" cols="60"></textarea>
+            </div>
+            <div class="field">
+                <label>3. What technologies have you used previously?:</label><br>
+                <textarea name="technologies" rows="6"
+                    cols="60">Eg: React.js, Node.js, React-Native, Java, C/C++, etc. </textarea>
+            </div>
+            <div class="field">
+                <label>4. Additional Information that you would like us to know:</label><br>
+                <textarea name="addinfo" rows="6" cols="60">Eg: any incredible past experience, etc. </textarea>
+            </div>
+        </fieldset>
+
+        <input type="submit" value="Submit form">
+    </form>
+</body>
+
+</html>

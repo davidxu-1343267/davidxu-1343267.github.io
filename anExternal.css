@@ -1,21 +1,27 @@
 /* An external CSS stylesheet */
+
 #BackgroundColor {
-	background-color: powderblue;
+    background-color: powderblue;
 }
+
 #p1 {
     font-family: georgia;
 }
+
 #p2 {
     font-family: Times New Roman;
 }
-#Picture{
-    height:50px;
-    width:50px;
+
+#Picture {
+    height: 50px;
+    width: 50px;
 }
-#Float{
-	float: right;
+
+#Float {
+    float: right;
 }
-#Meme{
+
+#Meme {
     border-radius: 20px;
     border: 5px solid #73AD21;
     font-family: "Arial";
